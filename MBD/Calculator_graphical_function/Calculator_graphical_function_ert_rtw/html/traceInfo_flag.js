@@ -1,0 +1,56 @@
+function TraceInfoFlag() {
+    this.traceFlag = new Array();
+    this.traceFlag["Calculator_graphical_function.c:43c13"]=1;
+    this.traceFlag["Calculator_graphical_function.c:44c11"]=1;
+    this.traceFlag["Calculator_graphical_function.c:45c13"]=1;
+    this.traceFlag["Calculator_graphical_function.c:45c16"]=1;
+    this.traceFlag["Calculator_graphical_function.c:62c13"]=1;
+    this.traceFlag["Calculator_graphical_function.c:63c11"]=1;
+    this.traceFlag["Calculator_graphical_function.c:64c13"]=1;
+    this.traceFlag["Calculator_graphical_function.c:64c16"]=1;
+    this.traceFlag["Calculator_graphical_function.c:81c13"]=1;
+    this.traceFlag["Calculator_graphical_function.c:82c11"]=1;
+    this.traceFlag["Calculator_graphical_function.c:83c13"]=1;
+    this.traceFlag["Calculator_graphical_function.c:83c16"]=1;
+    this.traceFlag["Calculator_graphical_function.c:100c11"]=1;
+    this.traceFlag["Calculator_graphical_function.c:102c54"]=1;
+}
+top.TraceInfoFlag.instance = new TraceInfoFlag();
+function TraceInfoLineFlag() {
+    this.lineTraceFlag = new Array();
+    this.lineTraceFlag["Calculator_graphical_function.c:43"]=1;
+    this.lineTraceFlag["Calculator_graphical_function.c:44"]=1;
+    this.lineTraceFlag["Calculator_graphical_function.c:45"]=1;
+    this.lineTraceFlag["Calculator_graphical_function.c:47"]=1;
+    this.lineTraceFlag["Calculator_graphical_function.c:50"]=1;
+    this.lineTraceFlag["Calculator_graphical_function.c:54"]=1;
+    this.lineTraceFlag["Calculator_graphical_function.c:62"]=1;
+    this.lineTraceFlag["Calculator_graphical_function.c:63"]=1;
+    this.lineTraceFlag["Calculator_graphical_function.c:64"]=1;
+    this.lineTraceFlag["Calculator_graphical_function.c:66"]=1;
+    this.lineTraceFlag["Calculator_graphical_function.c:69"]=1;
+    this.lineTraceFlag["Calculator_graphical_function.c:73"]=1;
+    this.lineTraceFlag["Calculator_graphical_function.c:81"]=1;
+    this.lineTraceFlag["Calculator_graphical_function.c:82"]=1;
+    this.lineTraceFlag["Calculator_graphical_function.c:83"]=1;
+    this.lineTraceFlag["Calculator_graphical_function.c:85"]=1;
+    this.lineTraceFlag["Calculator_graphical_function.c:88"]=1;
+    this.lineTraceFlag["Calculator_graphical_function.c:92"]=1;
+    this.lineTraceFlag["Calculator_graphical_function.c:100"]=1;
+    this.lineTraceFlag["Calculator_graphical_function.c:102"]=1;
+    this.lineTraceFlag["Calculator_graphical_function.c:105"]=1;
+    this.lineTraceFlag["Calculator_graphical_function.c:116"]=1;
+    this.lineTraceFlag["Calculator_graphical_function.c:117"]=1;
+    this.lineTraceFlag["Calculator_graphical_function.c:118"]=1;
+    this.lineTraceFlag["Calculator_graphical_function.c:119"]=1;
+    this.lineTraceFlag["Calculator_graphical_function.c:120"]=1;
+    this.lineTraceFlag["Calculator_graphical_function.c:121"]=1;
+    this.lineTraceFlag["Calculator_graphical_function.c:122"]=1;
+    this.lineTraceFlag["Calculator_graphical_function.c:123"]=1;
+    this.lineTraceFlag["Calculator_graphical_function.c:145"]=1;
+    this.lineTraceFlag["Calculator_graphical_function.c:150"]=1;
+    this.lineTraceFlag["Calculator_graphical_function.c:155"]=1;
+    this.lineTraceFlag["Calculator_graphical_function.c:160"]=1;
+    this.lineTraceFlag["Calculator_graphical_function.c:165"]=1;
+}
+top.TraceInfoLineFlag.instance = new TraceInfoLineFlag();
