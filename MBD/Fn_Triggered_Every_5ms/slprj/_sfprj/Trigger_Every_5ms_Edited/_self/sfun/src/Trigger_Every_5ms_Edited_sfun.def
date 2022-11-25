@@ -1,0 +1,4 @@
+LIBRARY Trigger_Every_5ms_Edited_sfun.mexw64
+EXPORTS
+mexFunction
+mexfilerequiredapiversion
