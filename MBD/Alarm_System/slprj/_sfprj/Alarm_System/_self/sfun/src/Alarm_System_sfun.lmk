@@ -1,0 +1,47 @@
+CC     = "C:\Program Files\MATLAB\R2018a\sys\lcc64\lcc64\bin\lcc64.exe"
+LD     = "C:\Program Files\MATLAB\R2018a\sys\lcc64\lcc64\bin\lcclnk64.exe"
+LIBCMD = "C:\Program Files\MATLAB\R2018a\sys\lcc64\lcc64\bin\lcclib64.exe"
+CFLAGS = -dll -noregistrylookup  -c -Zp8 -DLCC_WIN64 -DMATLAB_MEX_FILE -nodeclspec 
+LDFLAGS = -s -dll -L"C:\Program Files\MATLAB\R2018a\sys\lcc64\lcc64\lib64" -entry LibMain -map sfun.map 
+LIBFLAGS = 
+
+OBJECTS = \
+	"Alarm_System_sfun.obj"\
+	"c1_Alarm_System.obj"\
+	"c3_Alarm_System.obj"\
+	"Alarm_System_sfun_registry.obj"\
+	"LED.obj"\
+	"Buzzer.obj"\
+	"Switch.obj"\
+	"Dio_program.obj"\
+	"ADC_Program.obj"\
+	"lccstub.obj"\
+	"c_mexapi_version.obj"\
+
+INCLUDE_PATH= -I"C:\Program Files\MATLAB\R2018a\extern\include"  -I"C:\Program Files\MATLAB\R2018a\simulink\include"  -I"C:\Program Files\MATLAB\R2018a\simulink\include\sf_runtime"  -I"C:\Program Files\MATLAB\R2018a\stateflow\c\mex\include"  -I"C:\Program Files\MATLAB\R2018a\rtw\c\src"  -I"D:\Courses\ITI - E-Mobility\Matlab-MBD\MBD\Tasks\Alarm_System\slprj\_sfprj\Alarm_System\_self\sfun\src"  -I"D:\Courses\iti - e-mobility\matlab-mbd\MBD\Tasks\alarm_system\slprj\_sfprj\alarm_system\_self\sfun\src"  -I"D:\Courses\iti - e-mobility\matlab-mbd\MBD\Tasks\alarm_system"  -I"C:\Program Files\MATLAB\R2018a\sys\lcc64\lcc64\include64" 
+ 
+
+Alarm_System_sfun.mexw64 : $(MAKEFILE) $(OBJECTS)
+	$(LD) $(LDFLAGS) -o Alarm_System_sfun.mexw64 @Alarm_System_sfun.lmko
+Alarm_System_sfun.obj :	"Alarm_System_sfun.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "Alarm_System_sfun.c"
+c1_Alarm_System.obj :	"c1_Alarm_System.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c1_Alarm_System.c"
+c3_Alarm_System.obj :	"c3_Alarm_System.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c3_Alarm_System.c"
+Alarm_System_sfun_registry.obj :	"Alarm_System_sfun_registry.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "Alarm_System_sfun_registry.c"
+LED.obj :	"D:\Courses\iti - e-mobility\matlab-mbd\MBD\Tasks\alarm_system\LED.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "D:\Courses\iti - e-mobility\matlab-mbd\MBD\Tasks\alarm_system\LED.c"
+Buzzer.obj :	"D:\Courses\iti - e-mobility\matlab-mbd\MBD\Tasks\alarm_system\Buzzer.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "D:\Courses\iti - e-mobility\matlab-mbd\MBD\Tasks\alarm_system\Buzzer.c"
+Switch.obj :	"D:\Courses\iti - e-mobility\matlab-mbd\MBD\Tasks\alarm_system\Switch.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "D:\Courses\iti - e-mobility\matlab-mbd\MBD\Tasks\alarm_system\Switch.c"
+Dio_program.obj :	"D:\Courses\iti - e-mobility\matlab-mbd\MBD\Tasks\alarm_system\Dio_program.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "D:\Courses\iti - e-mobility\matlab-mbd\MBD\Tasks\alarm_system\Dio_program.c"
+ADC_Program.obj :	"D:\Courses\iti - e-mobility\matlab-mbd\MBD\Tasks\alarm_system\ADC_Program.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "D:\Courses\iti - e-mobility\matlab-mbd\MBD\Tasks\alarm_system\ADC_Program.c"
+lccstub.obj :	"C:\Program Files\MATLAB\R2018a\sys\lcc64\lcc64\mex\lccstub.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "C:\Program Files\MATLAB\R2018a\sys\lcc64\lcc64\mex\lccstub.c"
+c_mexapi_version.obj :	"C:\Program Files\MATLAB\R2018a\extern\version\c_mexapi_version.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "C:\Program Files\MATLAB\R2018a\extern\version\c_mexapi_version.c"

@@ -1,0 +1,4 @@
+LIBRARY Alarm_System_sfun.mexw64
+EXPORTS
+mexFunction
+mexfilerequiredapiversion
